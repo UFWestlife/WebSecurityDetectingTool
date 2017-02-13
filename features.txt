@@ -1,0 +1,5 @@
+<iframe[^/>]*width=[\"\']?0[\"\']?[^/>]*height=[\"\']?0[\"\']?[^/>]*
+<script[^/>]*(language=[\"\']?javascript[\"\']?)?[^/>]*src=[\\s\\S.]*?\\.js>
+<body[^/>]*onload=[\"\']?window.location=[\"\']?[\\s\\S]*[\"\']?;[\"\']?></body>
+<script[^/>]*language=[\"\']?JScript\\.Encode[\"\']?src=[\\s\\S]*></script>"
+<frame[^/>]*src=[\"\']?[\\s\\S]*?[\"\']?[^/>]*frameborder=[\"\']?no[\"\']?scrolling=[\"\']?no[\"\']?noresize[^/>]*marginwidth=[\"\']?0[\"\']?margingheight=[\"\']?0[\"\']?>

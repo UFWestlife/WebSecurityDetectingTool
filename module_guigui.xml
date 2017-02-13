@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_guigui" default="compile.module.guigui">
+  <dirname property="module.guigui.basedir" file="${ant.file.module_guigui}"/>
+  
+  <property name="module.jdk.home.guigui" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.guigui" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.guigui" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.guigui" value="-encoding UTF-8 -source 8 ${compiler.args}"/>
+  
+  <property name="guigui.output.dir" value="${module.guigui.basedir}/out/production/GUIGUI"/>
+  <property name="guigui.testoutput.dir" value="${module.guigui.basedir}/out/test/GUIGUI"/>
+  
+  <path id="guigui.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="guigui.module.production.classpath">
+    <path refid="${module.jdk.classpath.guigui}"/>
+    <path refid="library.antlr.classpath"/>
+  </path>
+  
+  <path id="guigui.runtime.production.module.classpath">
+    <pathelement location="${guigui.output.dir}"/>
+    <path refid="library.antlr.classpath"/>
+  </path>
+  
+  <path id="guigui.module.classpath">
+    <path refid="${module.jdk.classpath.guigui}"/>
+    <pathelement location="${guigui.output.dir}"/>
+    <path refid="library.antlr.classpath"/>
+  </path>
+  
+  <path id="guigui.runtime.module.classpath">
+    <pathelement location="${guigui.testoutput.dir}"/>
+    <pathelement location="${guigui.output.dir}"/>
+    <path refid="library.antlr.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.guigui">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.guigui">
+    <patternset refid="excluded.from.module.guigui"/>
+  </patternset>
+  
+  <path id="guigui.module.sourcepath">
+    <dirset dir="${module.guigui.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.guigui" depends="compile.module.guigui.production,compile.module.guigui.tests" description="Compile module GUIGUI"/>
+  
+  <target name="compile.module.guigui.production" depends="register.custom.compilers" description="Compile module GUIGUI; production classes">
+    <mkdir dir="${guigui.output.dir}"/>
+    <javac2 destdir="${guigui.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.guigui}/javac">
+      <compilerarg line="${compiler.args.guigui}"/>
+      <bootclasspath refid="guigui.module.bootclasspath"/>
+      <classpath refid="guigui.module.production.classpath"/>
+      <src refid="guigui.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.guigui"/>
+    </javac2>
+    
+    <copy todir="${guigui.output.dir}">
+      <fileset dir="${module.guigui.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.guigui.tests" depends="register.custom.compilers,compile.module.guigui.production" description="compile module GUIGUI; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.guigui" description="cleanup module">
+    <delete dir="${guigui.output.dir}"/>
+    <delete dir="${guigui.testoutput.dir}"/>
+  </target>
+</project>
