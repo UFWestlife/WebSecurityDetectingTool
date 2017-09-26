@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/HJ/GUI/CodeDetectForm.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/HJ/GUI/ErrorDialog.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/HJ/GUI/GUIStart.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/HJ/GUI/MainForm.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/HJ/GUI/OptionsDialog.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/HJ/GUI/WebTreeNode.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/HJ/ProcedureOrientedJAVA/TheFunction.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/HJ/ProcedureOrientedJAVA/TheParam.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/HJ/Scrawler/WebCrawler.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/HJ/Scrawler/WebInfo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/HJ/Threads/CrawlerThread.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/HJ/Threads/FormBypassThread.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/HJ/Threads/SQLInjectThread.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/HJ/Threads/WebTroThread.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/LY/FormBypass/FormBypassParser.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/LY/FormBypass/Formbypass.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/LY/WebTro/Readfile.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/LY/WebTro/Trojan.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/LY/WebTro/urlReader.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/MJ/SQLInject/ContentName.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/MJ/SQLInject/DBType.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/MJ/SQLInject/GetJudge.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/MJ/SQLInject/GetWebContent.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/MJ/SQLInject/PostJudge.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/MJ/SQLInject/SqlInjectInfo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/MJ/SQLInject/TableInfo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/MJ/SQLInject/ViolenceFrame.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/MJ/SQLInject/WebInfo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/MJ/SQLInject/WordName.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/MJ/SQLInject/choose.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/PublicClass/FormInfo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/PublicClass/Parser.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/PublicClass/SelectValue.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/PublicClass/WebTools.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/WZ/XSS/StringTools.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/WZ/XSS/XssDetection.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/neu/WZ/XSS/XssParser.java" charset="UTF-8" />
+  </component>
+</project>

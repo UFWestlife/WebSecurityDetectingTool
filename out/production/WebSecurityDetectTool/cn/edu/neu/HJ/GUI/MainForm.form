@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="cn.edu.neu.HJ.GUI.MainForm">
+  <grid id="27dc6" binding="MainPanel" layout-manager="GridLayoutManager" row-count="4" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="1366" height="768"/>
+    </constraints>
+    <properties>
+      <minimumSize width="1366" height="768"/>
+      <preferredSize width="1000" height="500"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <toolbar id="3a8b7" binding="MainToolBar">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="20"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="1855b" class="javax.swing.JButton" binding="BeginButton">
+            <constraints/>
+            <properties>
+              <borderPainted value="true"/>
+              <foreground color="-12828863"/>
+              <hideActionText value="false"/>
+              <horizontalTextPosition value="0"/>
+              <maximumSize width="50" height="50"/>
+              <minimumSize width="50" height="50"/>
+              <preferredSize width="45" height="45"/>
+              <text value=""/>
+              <toolTipText value="开始"/>
+            </properties>
+            <clientProperties>
+              <hideActionText class="java.lang.Boolean" value="false"/>
+            </clientProperties>
+          </component>
+          <component id="40fc7" class="javax.swing.JToolBar$Separator">
+            <constraints/>
+            <properties/>
+          </component>
+          <component id="2923b" class="javax.swing.JButton" binding="StopButton">
+            <constraints/>
+            <properties>
+              <maximumSize width="50" height="50"/>
+              <minimumSize width="50" height="50"/>
+              <preferredSize width="50" height="50"/>
+              <text value=""/>
+              <toolTipText value="停止"/>
+            </properties>
+          </component>
+          <component id="6bbce" class="javax.swing.JToolBar$Separator">
+            <constraints/>
+            <properties/>
+          </component>
+          <component id="21833" class="javax.swing.JButton" binding="OptionButton">
+            <constraints/>
+            <properties>
+              <maximumSize width="50" height="50"/>
+              <minimumSize width="50" height="50"/>
+              <text value=""/>
+              <toolTipText value="选项"/>
+            </properties>
+          </component>
+          <component id="cb5cb" class="javax.swing.JToolBar$Separator">
+            <constraints/>
+            <properties/>
+          </component>
+          <component id="74b29" class="javax.swing.JButton" binding="ClearButton">
+            <constraints/>
+            <properties>
+              <maximumSize width="50" height="50"/>
+              <minimumSize width="50" height="50"/>
+              <text value=""/>
+              <toolTipText value="清除屏幕"/>
+            </properties>
+          </component>
+          <component id="87dbe" class="javax.swing.JToolBar$Separator">
+            <constraints/>
+            <properties/>
+          </component>
+          <component id="f029f" class="javax.swing.JButton" binding="CodeModeButton">
+            <constraints/>
+            <properties>
+              <maximumSize width="50" height="50"/>
+              <minimumSize width="50" height="50"/>
+              <opaque value="true"/>
+              <text value=""/>
+              <toolTipText value="代码漏洞扫描"/>
+            </properties>
+          </component>
+          <component id="e7b57" class="javax.swing.JToolBar$Separator">
+            <constraints/>
+            <properties/>
+          </component>
+          <component id="3ea4c" class="javax.swing.JButton" binding="AboutButton">
+            <constraints/>
+            <properties>
+              <maximumSize width="50" height="50"/>
+              <minimumSize width="50" height="50"/>
+              <text value=""/>
+              <toolTipText value="关于"/>
+            </properties>
+          </component>
+        </children>
+      </toolbar>
+      <tabbedpane id="b17c0" binding="DetectionResult">
+        <constraints>
+          <grid row="1" column="0" row-span="2" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="200"/>
+          </grid>
+        </constraints>
+        <properties>
+          <tabPlacement value="3"/>
+          <toolTipText value="爬虫"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="9e3e4" binding="Crawler" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="爬虫"/>
+            </constraints>
+            <properties>
+              <toolTipText value="爬虫"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <scrollpane id="14539" binding="ResultOutputPanel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="line" title="检测结果">
+                  <color color="-1303516"/>
+                </border>
+                <children>
+                  <component id="1e9cc" class="javax.swing.JTextArea" binding="ResultOutput">
+                    <constraints/>
+                    <properties>
+                      <editable value="false"/>
+                      <font name="Microsoft YaHei UI" size="16"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+              <scrollpane id="cec38" binding="TreeSPane">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="line" title="网站结构">
+                  <color color="-1303516"/>
+                </border>
+                <children>
+                  <component id="6b030" class="javax.swing.JTree" binding="WebTree">
+                    <constraints/>
+                    <properties>
+                      <editable value="true"/>
+                      <font name="Microsoft YaHei UI" size="16"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+              <scrollpane id="d4d67" binding="ProcessOutputPanel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="line" title="检测过程">
+                  <color color="-1303516"/>
+                </border>
+                <children>
+                  <component id="a06c0" class="javax.swing.JTextArea" binding="ProcessOutput">
+                    <constraints/>
+                    <properties>
+                      <editable value="false"/>
+                      <font name="Microsoft YaHei UI" size="16"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+            </children>
+          </grid>
+          <grid id="caf60" binding="SQlInjectResultPanel" layout-manager="GridLayoutManager" row-count="20" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="SQL注入检测"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <scrollpane id="f3b3e" binding="SQLProcessPanel">
+                <constraints>
+                  <grid row="1" column="0" row-span="19" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <toolTipText value="SQL注入过程"/>
+                </properties>
+                <border type="line" title="SQl注入过程">
+                  <color color="-3678991"/>
+                </border>
+                <children>
+                  <component id="26611" class="javax.swing.JTextArea" binding="SQLInjectpRrocessText">
+                    <constraints/>
+                    <properties>
+                      <editable value="false"/>
+                      <font name="Microsoft YaHei UI" size="16"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+              <component id="e4b3d" class="javax.swing.JLabel" binding="SQLInjectLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Microsoft YaHei UI" size="16"/>
+                  <labelFor value="dd107"/>
+                  <text value="&amp;DetectedURL："/>
+                </properties>
+              </component>
+              <component id="dd107" class="javax.swing.JTextField" binding="SQLInjectURL">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <editable value="false"/>
+                </properties>
+              </component>
+              <grid id="95d27" binding="InjectTypePanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="1" column="2" row-span="3" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <minimum-size width="620" height="64"/>
+                    <preferred-size width="620" height="64"/>
+                    <maximum-size width="620" height="64"/>
+                  </grid>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <scrollpane id="ac2a0">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="line" title="检测到SQL注入的类型为">
+                      <title-color color="-16579837"/>
+                      <color color="-3678991"/>
+                    </border>
+                    <children>
+                      <component id="6876c" class="javax.swing.JTextArea" binding="InjectTypeText">
+                        <constraints/>
+                        <properties>
+                          <editable value="false"/>
+                          <font name="Microsoft YaHei UI" size="16"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </scrollpane>
+                </children>
+              </grid>
+              <grid id="214a" binding="TabelNamePanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <minimum-size width="620" height="100"/>
+                    <preferred-size width="620" height="100"/>
+                    <maximum-size width="620" height="100"/>
+                  </grid>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <scrollpane id="d20f4" binding="TableName">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="line" title="检测到的表名为">
+                      <title-color color="-16579837"/>
+                      <color color="-3678991"/>
+                    </border>
+                    <children>
+                      <component id="d3b27" class="javax.swing.JTextArea" binding="TableNameText">
+                        <constraints/>
+                        <properties>
+                          <editable value="false"/>
+                          <font name="Microsoft YaHei UI" size="16"/>
+                          <rows value="0"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </scrollpane>
+                </children>
+              </grid>
+              <grid id="b7672" binding="WordNamePanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="6" column="2" row-span="5" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <minimum-size width="620" height="150"/>
+                    <preferred-size width="620" height="150"/>
+                    <maximum-size width="620" height="150"/>
+                  </grid>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <scrollpane id="97a55" binding="WordName">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="line" title="检测到的字段名为">
+                      <title-color color="-16579837"/>
+                      <color color="-3678991"/>
+                    </border>
+                    <children>
+                      <component id="c3072" class="javax.swing.JTextArea" binding="WordNameText">
+                        <constraints/>
+                        <properties>
+                          <editable value="false"/>
+                          <font name="Microsoft YaHei UI" size="16"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </scrollpane>
+                </children>
+              </grid>
+              <grid id="ab4e5" binding="WordPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="11" column="2" row-span="9" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <minimum-size width="620" height="256"/>
+                    <preferred-size width="620" height="256"/>
+                    <maximum-size width="620" height="256"/>
+                  </grid>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <scrollpane id="76cf4" binding="Word">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="line" title="检测到的 字段内容">
+                      <title-color color="-16579837"/>
+                      <color color="-3678991"/>
+                    </border>
+                    <children>
+                      <component id="d85e1" class="javax.swing.JTextArea" binding="WordText">
+                        <constraints/>
+                        <properties>
+                          <editable value="false"/>
+                          <font name="Microsoft YaHei UI" size="16"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </scrollpane>
+                </children>
+              </grid>
+              <hspacer id="891bb">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="4" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <grid id="d36dc" binding="DataBaseTypePanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <minimum-size width="620" height="64"/>
+                    <preferred-size width="620" height="64"/>
+                    <maximum-size width="620" height="64"/>
+                  </grid>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <scrollpane id="e666f" binding="DataBaseTypeField">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="line" title="检测到的数据库类型为">
+                      <title-color color="-16579837"/>
+                      <color color="-3678991"/>
+                    </border>
+                    <children>
+                      <component id="81dc3" class="javax.swing.JTextArea" binding="DataBaseTypeText">
+                        <constraints/>
+                        <properties>
+                          <editable value="false"/>
+                          <font name="Microsoft YaHei UI" size="16"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </scrollpane>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="488c0" binding="XSSField" layout-manager="GridLayoutManager" row-count="5" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="XSS检测"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <scrollpane id="cb69b" binding="XSSProcess">
+                <constraints>
+                  <grid row="1" column="0" row-span="4" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="line" title="检测过程">
+                  <font/>
+                  <color color="-4984450"/>
+                </border>
+                <children>
+                  <component id="2f8a6" class="javax.swing.JTextArea" binding="XSSProcessText">
+                    <constraints/>
+                    <properties>
+                      <editable value="false"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+              <scrollpane id="1101d" binding="XSSResult">
+                <constraints>
+                  <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="line" title="检测结果">
+                  <color color="-4984450"/>
+                </border>
+                <children>
+                  <component id="79e09" class="javax.swing.JTextArea" binding="XSSResultText">
+                    <constraints/>
+                    <properties>
+                      <editable value="false"/>
+                      <font name="Microsoft YaHei UI" size="16"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+              <scrollpane id="221ec" binding="ActionAttributionField">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="line" title="Action属性">
+                  <color color="-4984450"/>
+                </border>
+                <children>
+                  <component id="47d4" class="javax.swing.JTextArea" binding="ActionAttributionText">
+                    <constraints/>
+                    <properties>
+                      <editable value="false"/>
+                      <font name="Microsoft YaHei UI" size="16"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+              <scrollpane id="17385" binding="SubmitTypeField">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="line" title="提交类型">
+                  <color color="-4984450"/>
+                </border>
+                <children>
+                  <component id="a4514" class="javax.swing.JTextArea" binding="SubmitTypeText">
+                    <constraints/>
+                    <properties>
+                      <editable value="false"/>
+                      <font name="Microsoft YaHei UI" size="16"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+              <scrollpane id="fc39b" binding="VectorFiled">
+                <constraints>
+                  <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="line" title="攻击向量">
+                  <color color="-4984450"/>
+                </border>
+                <children>
+                  <component id="7ad3b" class="javax.swing.JTextArea" binding="VectorText">
+                    <constraints/>
+                    <properties>
+                      <editable value="false"/>
+                      <font name="Microsoft YaHei UI" size="16"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+              <component id="89c08" class="javax.swing.JLabel" binding="DetectedURL">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Microsoft YaHei UI" size="16"/>
+                  <labelFor value="9220b"/>
+                  <text value="检测的URL："/>
+                </properties>
+              </component>
+              <component id="9220b" class="javax.swing.JTextField" binding="DetectedURLOutput">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <editable value="false"/>
+                  <font name="Microsoft YaHei UI" size="16"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="6c6ed" binding="FormBypassField" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="表单绕过扫描"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <scrollpane id="911a6" binding="FormBypassProcess">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="line" title="表单绕过扫描过程">
+                  <color color="-4481521"/>
+                </border>
+                <children>
+                  <component id="3317" class="javax.swing.JTextArea" binding="FormBypassProcessText">
+                    <constraints/>
+                    <properties>
+                      <editable value="false"/>
+                      <font name="Microsoft YaHei UI" size="16"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+              <scrollpane id="c4306" binding="FormBypassResultText">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="line" title="表单绕过扫描结果">
+                  <color color="-4481521"/>
+                </border>
+                <children>
+                  <component id="bd739" class="javax.swing.JTextArea" binding="FromBypassResultText">
+                    <constraints/>
+                    <properties>
+                      <editable value="false"/>
+                      <font name="Microsoft YaHei UI" size="16"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+    </children>
+  </grid>
+  <inspectionSuppressions>
+    <suppress inspection="NoLabelFor" id="a06c0"/>
+    <suppress inspection="NoLabelFor" id="1e9cc"/>
+    <suppress inspection="NoLabelFor" id="cec38"/>
+    <suppress inspection="NoLabelFor" id="d4d67"/>
+    <suppress inspection="NoLabelFor" id="14539"/>
+    <suppress inspection="NoLabelFor" id="f3b3e"/>
+    <suppress inspection="NoLabelFor" id="26611"/>
+    <suppress inspection="NoLabelFor" id="fb36"/>
+    <suppress inspection="NoLabelFor" id="97a55"/>
+    <suppress inspection="NoLabelFor" id="d20f4"/>
+    <suppress inspection="NoLabelFor" id="ac2a0"/>
+    <suppress inspection="NoLabelFor" id="6876c"/>
+    <suppress inspection="NoLabelFor" id="d3b27"/>
+    <suppress inspection="NoLabelFor" id="c3072"/>
+    <suppress inspection="NoLabelFor" id="76cf4"/>
+    <suppress inspection="NoLabelFor" id="d85e1"/>
+    <suppress inspection="NoLabelFor" id="cb69b"/>
+    <suppress inspection="NoLabelFor" id="2f8a6"/>
+    <suppress inspection="NoLabelFor" id="1101d"/>
+    <suppress inspection="NoLabelFor" id="79e09"/>
+    <suppress inspection="NoLabelFor" id="911a6"/>
+    <suppress inspection="NoLabelFor" id="3317"/>
+    <suppress inspection="NoLabelFor" id="c4306"/>
+    <suppress inspection="NoLabelFor" id="d8791"/>
+    <suppress inspection="NoLabelFor" id="cdc03"/>
+    <suppress inspection="NoLabelFor" id="cb6f8"/>
+    <suppress inspection="NoLabelFor" id="d78d1"/>
+    <suppress inspection="NoLabelFor" id="221ec"/>
+    <suppress inspection="NoLabelFor" id="47d4"/>
+    <suppress inspection="NoLabelFor" id="17385"/>
+    <suppress inspection="NoLabelFor" id="a4514"/>
+    <suppress inspection="NoLabelFor" id="7ad3b"/>
+    <suppress inspection="NoLabelFor" id="fc39b"/>
+    <suppress inspection="NoLabelFor" id="e666f"/>
+    <suppress inspection="NoLabelFor" id="81dc3"/>
+  </inspectionSuppressions>
+</form>

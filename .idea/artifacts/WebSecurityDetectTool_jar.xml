@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="WebSecurityDetectTool:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/WebSecurityDetectTool_jar</output-path>
+    <root id="archive" name="WebSecurityDetectTool.jar">
+      <element id="module-output" name="WebSecurityDetectTool" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/xss/xss/antlr.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/xss/xss/chardet.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/xss/xss/cpdetector_1.0.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/xss/xss/jargs.jar" path-in-jar="/" />
+      <element id="dir-copy" path="$PROJECT_DIR$/Icons" />
+      <element id="file-copy" path="$PROJECT_DIR$/wordname.txt" />
+      <element id="file-copy" path="$PROJECT_DIR$/Table.txt" />
+      <element id="file-copy" path="$PROJECT_DIR$/features.txt" />
+    </root>
+  </artifact>
+</component>

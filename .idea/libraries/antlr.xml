@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="antlr">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../xss/Xss/antlr.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../xss/Xss/chardet.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../xss/Xss/cpdetector_1.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../xss/Xss/jargs.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

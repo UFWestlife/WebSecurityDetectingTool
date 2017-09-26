@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_websecuritydetecttool" default="compile.module.websecuritydetecttool">
+  <dirname property="module.websecuritydetecttool.basedir" file="${ant.file.module_websecuritydetecttool}"/>
+  
+  <property name="module.jdk.home.websecuritydetecttool" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.websecuritydetecttool" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.websecuritydetecttool" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.websecuritydetecttool" value="-encoding UTF-8 -source 8 ${compiler.args}"/>
+  
+  <property name="websecuritydetecttool.output.dir" value="${module.websecuritydetecttool.basedir}/out/production/WebSecurityDetectTool"/>
+  <property name="websecuritydetecttool.testoutput.dir" value="${module.websecuritydetecttool.basedir}/out/test/WebSecurityDetectTool"/>
+  
+  <path id="websecuritydetecttool.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="websecuritydetecttool.module.production.classpath">
+    <path refid="${module.jdk.classpath.websecuritydetecttool}"/>
+    <path refid="library.antlr.classpath"/>
+  </path>
+  
+  <path id="websecuritydetecttool.runtime.production.module.classpath">
+    <pathelement location="${websecuritydetecttool.output.dir}"/>
+    <path refid="library.antlr.classpath"/>
+  </path>
+  
+  <path id="websecuritydetecttool.module.classpath">
+    <path refid="${module.jdk.classpath.websecuritydetecttool}"/>
+    <pathelement location="${websecuritydetecttool.output.dir}"/>
+    <path refid="library.antlr.classpath"/>
+  </path>
+  
+  <path id="websecuritydetecttool.runtime.module.classpath">
+    <pathelement location="${websecuritydetecttool.testoutput.dir}"/>
+    <pathelement location="${websecuritydetecttool.output.dir}"/>
+    <path refid="library.antlr.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.websecuritydetecttool">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.websecuritydetecttool">
+    <patternset refid="excluded.from.module.websecuritydetecttool"/>
+  </patternset>
+  
+  <path id="websecuritydetecttool.module.sourcepath">
+    <dirset dir="${module.websecuritydetecttool.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.websecuritydetecttool" depends="compile.module.websecuritydetecttool.production,compile.module.websecuritydetecttool.tests" description="Compile module WebSecurityDetectTool"/>
+  
+  <target name="compile.module.websecuritydetecttool.production" depends="register.custom.compilers" description="Compile module WebSecurityDetectTool; production classes">
+    <mkdir dir="${websecuritydetecttool.output.dir}"/>
+    <javac2 destdir="${websecuritydetecttool.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.websecuritydetecttool}/javac">
+      <compilerarg line="${compiler.args.websecuritydetecttool}"/>
+      <bootclasspath refid="websecuritydetecttool.module.bootclasspath"/>
+      <classpath refid="websecuritydetecttool.module.production.classpath"/>
+      <src refid="websecuritydetecttool.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.websecuritydetecttool"/>
+    </javac2>
+    
+    <copy todir="${websecuritydetecttool.output.dir}">
+      <fileset dir="${module.websecuritydetecttool.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.websecuritydetecttool.tests" depends="register.custom.compilers,compile.module.websecuritydetecttool.production" description="compile module WebSecurityDetectTool; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.websecuritydetecttool" description="cleanup module">
+    <delete dir="${websecuritydetecttool.output.dir}"/>
+    <delete dir="${websecuritydetecttool.testoutput.dir}"/>
+  </target>
+</project>

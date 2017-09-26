@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="antlr">
+    <archive path="C:/Users/lx/Desktop/xss/Xss/antlr.jar" />
+    <archive path="C:/Users/lx/Desktop/xss/Xss/chardet.jar" />
+    <archive path="C:/Users/lx/Desktop/xss/Xss/cpdetector_1.0.7.jar" />
+    <archive path="C:/Users/lx/Desktop/xss/Xss/jargs.jar" />
+  </library>
+</eclipse-userlibraries>
+
